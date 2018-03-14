@@ -55,8 +55,10 @@
 				        </div>
 				      </div>
      			</div>
-     			<div class="col s8 m8">
-     				<div class="card">
+     		</div>
+ 			<div class="row">
+ 				<div class="col s8 m8">
+ 					<div class="card">
 						<div class="card-image waves-effect waves-block waves-light">
 							<img class="activator" src="5.jpg">
 							</div>
@@ -69,8 +71,16 @@
 								<p>Here is some more information about this product that is only revealed once clicked on.</p>
 							</div>
 						</div>
-     			</div>
-     		</div>
+ 				</div>
+ 			</div>
+ 			<div class="row">
+ 				<div class="col m12 s12">
+ 					<div class="chips"></div>
+				  	<div class="chips chips-initial"></div>
+				  	<div class="chips chips-placeholder"></div>
+				  	<div class="chips chips-autocomplete"></div>
+ 				</div>
+ 			</div>
      		<div class="row">
      			<div class="col s12 m12">
      				<div class="fixed-action-btn vertical">
@@ -140,5 +150,39 @@
 
 	<script src="js/jquery-3.3.1.js"></script>
 	<script src="materialize/js/materialize.js"></script>
+	<script>
+		$('.chips').material_chip();
+  $('.chips-initial').material_chip({
+    data: [{
+      tag: 'Apple',
+    }, {
+      tag: 'Microsoft',
+    }, {
+      tag: 'Google',
+    }],
+  });
+  $('.chips-placeholder').material_chip({
+    placeholder: 'Enter a tag',
+    secondaryPlaceholder: '+Tag',
+  });
+  $('.chips-autocomplete').material_chip({
+    autocompleteOptions: {
+      data: {
+        'Apple': null,
+        'Microsoft': null,
+        'Google': null
+      },
+      limit: Infinity,
+      minLength: 1
+    }
+  });
+	</script>
+	<script>
+		  var chip = {
+    tag: 'chip content',
+    image: '', //optional
+    id: 1, //optional
+  };
+	</script>
 </body>
 </html>
