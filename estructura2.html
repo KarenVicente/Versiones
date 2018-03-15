@@ -7,17 +7,34 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="materialize/css/materialize.css">
 </head>
+<style>
+	.logo a img{
+		width: 80%;
+		height: 40px;
+		padding-left: 40px;
+		padding-top: 5px;
+	}
+</style>
 <body>
 	<nav>
-		<div class="nav-wrapper cyan darken-3">
-		  <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
-		  <ul class="right hide-on-med-and-down">
-		    <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-		    <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
-		    <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
-		    <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-		  </ul>
-		</div>
+	    <div class="nav-wrapper lime accent-4 logo">
+	      <a href="#!" class="brand-logo ">
+	      	<img src="Imagenes/logo3.png" alt="">
+	      </a>
+	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	      <ul class="right hide-on-med-and-down">
+	        <li><a href="sass.html">Viajes</a></li>
+	        <li><a href="badges.html">Cotizaciones</a></li>
+	        <li><a href="collapsible.html">Precios</a></li>
+	        <li><a href="mobile.html">Planes de Viaje</a></li>
+	      </ul>
+	      <ul class="side-nav" id="mobile-demo">
+	        <li><a href="sass.html">Sass</a></li>
+	        <li><a href="badges.html">Components</a></li>
+	        <li><a href="collapsible.html">Javascript</a></li>
+	        <li><a href="mobile.html">Mobile</a></li>
+	      </ul>
+	    </div>
 	</nav>
 	<div class="row">
 		<div class="col s6 m3">
@@ -27,7 +44,7 @@
 			    </div>
 			    <div class="card-content">
 			      <span class="card-title activator grey-text text-darken-4">Ruinas del Tikal <i class="material-icons right">more_vert</i></span>
-			      <p><a href="#">This is a link</a></p>
+			      <p><a href="#" class="lime-text text-accent-4">This is a link</a></p>
 			    </div>
 			    <div class="card-reveal">
 			      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -42,7 +59,7 @@
 			    </div>
 			    <div class="card-content">
 			      <span class="card-title activator grey-text text-darken-4">Antigua Guatemala <i class="material-icons right">more_vert</i></span>
-			      <p><a href="#">This is a link</a></p>
+			      <p><a href="#" class="lime-text text-accent-4">This is a link</a></p>
 			    </div>
 			    <div class="card-reveal">
 			      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -57,7 +74,7 @@
 			    </div>
 			    <div class="card-content">
 			      <span class="card-title activator grey-text text-darken-4"> Rio de Izabal <i class="material-icons right">more_vert</i></span>
-			      <p><a href="#">This is a link</a></p>
+			      <p><a href="#" class="lime-text text-accent-4">This is a link</a></p>
 			    </div>
 			    <div class="card-reveal">
 			      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -72,7 +89,7 @@
 			    </div>
 			    <div class="card-content">
 			      <span class="card-title activator grey-text text-darken-4"> Lago de Atitlán<i class="material-icons right">more_vert</i></span>
-			      <p><a href="#">This is a link</a></p>
+			      <p><a href="#" class="lime-text text-accent-4">This is a link</a></p>
 			    </div>
 			    <div class="card-reveal">
 			      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -85,10 +102,10 @@
 		<div class="col s12 m3">
 			<ul class="collection with-header">
 		        <li class="collection-header"><h4>Redes Sociales</h4></li>
-		        <li class="collection-item"><div>Facebook<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
-		        <li class="collection-item"><div>Twitter<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
-		        <li class="collection-item"><div>YouTube<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
-		        <li class="collection-item"><div>Instagram<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+		        <li class="collection-item"><div>Facebook<a href="#!" class="secondary-content lime-text text-accent-4"><i class="material-icons">send</i></a></div></li>
+		        <li class="collection-item"><div>Twitter<a href="#!" class="secondary-content lime-text text-accent-4"><i class="material-icons">send</i></a></div></li>
+		        <li class="collection-item"><div>YouTube<a href="#!" class="secondary-content lime-text text-accent-4"><i class="material-icons">send</i></a></div></li>
+		        <li class="collection-item"><div>Instagram<a href="#!" class="secondary-content lime-text text-accent-4"><i class="material-icons">send</i></a></div></li>
 		    </ul>
 		</div>
 		<div class="col s12 m9">
@@ -108,14 +125,14 @@
 				          <label for="icon_telephone">Telephone</label>
 				        </div>
 				      </div>
-				      <button class="btn right">Iniciar Sesión</button>
+				      <button class="btn right lime accent-4">Iniciar Sesión</button>
 				    </form>
 				  </div>
 			</div>
 		</div>
 
 	</div>
-	<footer class="page-footer blue-grey lighten-1">
+	<footer class="page-footer lime accent-4">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
@@ -123,12 +140,12 @@
             <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
           </div>
           <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
+            <h5 class="white-text">Planes</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Familiares</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Individual</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Excursiones</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Amigos</a></li>
             </ul>
           </div>
         </div>
@@ -144,5 +161,8 @@
 
 	<script src="js/jquery-3.3.1.js"></script>
 	<script src="materialize/js/materialize.js"></script>
+	<script>
+		$(".button-collapse").sideNav();
+	</script>
 </body>
 </html>
